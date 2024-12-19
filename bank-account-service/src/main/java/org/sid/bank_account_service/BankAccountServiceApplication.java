@@ -19,7 +19,7 @@ public class BankAccountServiceApplication {
 	}
 
 	@Bean
-	CommandLineRunner start(BankAccountRepository bannkAccountRepository, BankAccountRepository bankAccountRepository){
+	CommandLineRunner start(BankAccountRepository bankAccountRepository){
 		return args -> {
 			for(int i = 0 ; i < 20 ; i++){
 				BankAccount bankAccount = BankAccount.builder()
